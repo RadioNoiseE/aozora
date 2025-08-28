@@ -83,7 +83,7 @@
   </xsl:template>
 
   <xsl:template mode="body" match="*">
-    <xsl:apply-templates mode="meta" select="xhtml:div[@class='metadata']"/>
+    <xsl:apply-templates mode="meta" select="xhtml:div[@class='metadata']|."/>
     <xsl:apply-templates mode="text" select="xhtml:div[@class='main_text']"/>
   </xsl:template>
 
